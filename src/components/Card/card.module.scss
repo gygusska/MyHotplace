@@ -1,0 +1,46 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/mixins/typography';
+
+.cardWrap {
+  position: relative;
+  display: flex;
+  align-items: end;
+  min-width: 140px;
+  height: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('https://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/master/pass/the-ultimate-hamburger.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+
+  .cardInfo {
+    z-index: 1;
+    // .cardRating {}
+
+    .cardTitle {
+      @include typography.lineClamp(2, 20);
+      font-size: 16px;
+      color: colors.$TEXT_WHITE;
+    }
+
+    .cardDate {
+      margin-top: 20px;
+      font-size: 14px;
+      color: colors.$TEXT_SECONDARY;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000000;
+    opacity: 0.3;
+  }
+}

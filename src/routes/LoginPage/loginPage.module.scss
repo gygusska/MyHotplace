@@ -1,0 +1,39 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/mixins/flexbox';
+
+.loginPage {
+  @include flexbox.flexbox;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: colors.$BG_G;
+
+  .loginForm {
+    width: 100%;
+
+    .loginTitle {
+      margin-bottom: 8vh;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .guideWrapper {
+      padding: 0 15px;
+      margin-top: 10px;
+
+      .guide {
+        font-size: 14px;
+        color: colors.$TEXT_SECONDARY;
+      }
+    }
+
+    button {
+      margin-top: 30px;
+    }
+  }
+
+  .signUpLink {
+    margin-top: 25px;
+    color: colors.$TEXT_HILIGHT;
+  }
+}

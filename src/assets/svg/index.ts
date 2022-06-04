@@ -1,0 +1,6 @@
+export { ReactComponent as Logo } from './logo.svg'
+export { ReactComponent as LoginLogo } from './login_logo.svg'
+export { ReactComponent as LoginImg } from './login_img.svg'
+export { ReactComponent as MenuBtn } from './menu_btn.svg'
+export { ReactComponent as CloseArrowBtn } from './close_arrow_btn.svg'
+export { ReactComponent as CloseBtn } from './close_btn.svg'

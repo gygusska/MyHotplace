@@ -1,5 +1,3 @@
-/* stylelint-disable value-no-vendor-prefix */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,10 +17,6 @@
   &::-webkit-scrollbar {
     display: none; // Chrome
   }
-}
-
-body {
-  overflow: hidden;
 }
 
 img {

@@ -2,5 +2,8 @@
 @use '/src/styles/mixins/responsive';
 
 .app {
-  
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: colors.$BG_G;
 }

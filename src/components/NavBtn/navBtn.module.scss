@@ -1,0 +1,19 @@
+@use '/src/styles/constants/colors';
+
+.linkBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: colors.$BT_RED;
+  background-color: colors.$BT_WHITE;
+  border: 1px solid colors.$BT_RED;
+  border-radius: 25px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

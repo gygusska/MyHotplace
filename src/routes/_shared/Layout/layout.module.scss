@@ -1,0 +1,19 @@
+@use '/src/styles/constants/levels';
+@use '/src/styles/constants/colors';
+
+.header {
+  position: fixed;
+  z-index: levels.$HEADER;
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  background: colors.$WHITE;
+  border-bottom: 1px solid colors.$BG_WHITE;
+}
+
+.main {
+  max-width: 1160px;
+  min-height: 100vh;
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
