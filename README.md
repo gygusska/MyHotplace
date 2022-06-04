@@ -74,3 +74,5 @@ yarn start
   - [x] 테마 상세 페이지(팝업)
     - [x] 테마관련 핫플 리스트 출력
     - [x] 지도이동 기능
+
+<img width="409" alt="image" src="https://user-images.githubusercontent.com/28261736/172025745-aec8699e-59c4-4a2f-a890-eee5500a06d6.png">
