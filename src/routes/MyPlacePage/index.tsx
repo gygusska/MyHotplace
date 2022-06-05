@@ -1,10 +1,19 @@
 import HeadBtn from 'components/HeadBtn'
+import Card from 'components/Card'
+
+import styles from './myPlacePage.module.scss'
 
 const MyPlacePage = () => {
   return (
-    <div>
+    <section className={styles.placeWrap}>
       <HeadBtn>나의 핫플레이스</HeadBtn>
-    </div>
+      <div className={styles.placeList}>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </section>
   )
 }
 

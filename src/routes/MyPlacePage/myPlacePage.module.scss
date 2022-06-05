@@ -1,0 +1,16 @@
+.placeWrap {
+  position: relative;
+
+  .placeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    button {
+      flex-basis: 150px;
+      flex-grow: 1;
+    }
+  }
+}
