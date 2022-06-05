@@ -34,7 +34,7 @@ yarn install
 yarn start
 ```
 ## 로그인 아이디
-REACT_APP_ADMIN_ID=admin12345
+REACT_APP_ADMIN_ID=admin12345 <br />
 REACT_APP_ADMIN_PW=qwer1234!@#
 
 ## ** 사이트 구성 **
