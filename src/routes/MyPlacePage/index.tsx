@@ -2,6 +2,7 @@ import HeadBtn from 'components/HeadBtn'
 import Card from 'components/Card'
 
 import styles from './myPlacePage.module.scss'
+import Button from 'components/Button'
 
 const MyPlacePage = () => {
   return (
