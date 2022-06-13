@@ -4,7 +4,7 @@
 
 ## 🔧 **기술스택**
 
-- Typescript, React, Sass <br />
+- Typescript, React, Scss <br />
 
 <br />
 

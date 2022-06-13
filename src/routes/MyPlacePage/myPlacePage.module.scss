@@ -1,5 +1,9 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/constants/levels';
+
 .placeWrap {
   position: relative;
+  padding-bottom: 30px;
 
   .placeList {
     display: flex;
@@ -8,9 +12,13 @@
     justify-content: space-between;
     padding: 0 20px;
 
-    button {
+    li {
       flex-basis: 150px;
       flex-grow: 1;
+
+      button {
+        margin: 0;
+      }
     }
   }
 }

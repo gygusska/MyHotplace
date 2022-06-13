@@ -10,11 +10,11 @@ interface Props {
   primary?: boolean
   secondary?: boolean
   type?: 'submit' | 'button'
-
-  isActive?: boolean
+  addBtn?: boolean
+  className?: string
 }
 
-const Button = ({ children, size, primary, secondary, onClick, type, isActive }: Props) => {
+const Button = ({ children, size, primary, secondary, onClick, type, addBtn, className }: Props) => {
   return (
     <button
       type={type === 'submit' ? 'submit' : 'button'}
@@ -23,7 +23,8 @@ const Button = ({ children, size, primary, secondary, onClick, type, isActive }:
         styles[size],
         { [styles.primary]: primary },
         { [styles.secondary]: secondary },
-        { [styles.isActive]: isActive }
+        { [styles.addBtn]: addBtn },
+        className
       )}
       onClick={onClick}
     >

@@ -1,0 +1,17 @@
+@use '/src/styles/constants/colors';
+
+.starRating {
+  text-align: center;
+
+  button {
+    font-size: 40px;
+  }
+
+  .on {
+    color: colors.$STAR_RATING_ON;
+  }
+
+  .off {
+    color: colors.$STAR_RATING_OFF;
+  }
+}

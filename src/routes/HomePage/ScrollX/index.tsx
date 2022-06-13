@@ -6,7 +6,7 @@ interface Props {
 }
 
 const ScrollX = ({ children }: Props) => {
-  return <div className={styles.scrollX}>{children}</div>
+  return <ul className={styles.scrollX}>{children}</ul>
 }
 
 export default ScrollX

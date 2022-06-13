@@ -1,6 +1,6 @@
 import { MouseEventHandler, ReactNode } from 'react'
 
-import { CloseBtn, CloseArrowBtn } from 'assets/svg'
+import { CloseBtnIcon, CloseArrowBtnIcon } from 'assets/svg'
 import styles from './headBtn.module.scss'
 import { cx } from 'styles'
 
@@ -12,12 +12,12 @@ interface Props {
 
 const HeadBtn = ({ children, closeBtn, onClick }: Props) => {
   return (
-    <button type='button' onClick={onClick} className={styles.headBtn}>
-      <div className={cx(styles.icon, { [styles.closeBtn]: closeBtn })}>
-        {closeBtn ? <CloseBtn /> : <CloseArrowBtn />}
-      </div>
+    <div className={styles.headBtn}>
+      <button type='button' onClick={onClick} className={cx(styles.icon, { [styles.closeBtn]: closeBtn })}>
+        {closeBtn ? <CloseBtnIcon /> : <CloseArrowBtnIcon />}
+      </button>
       {children}
-    </button>
+    </div>
   )
 }
 

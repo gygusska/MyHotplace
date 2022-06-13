@@ -1,4 +1,5 @@
 @use '/src/styles/constants/colors';
+@use '/src/styles/constants/levels';
 
 .button {
   width: 100%;
@@ -34,6 +35,7 @@
     width: 108px;
     height: 40px;
     font-size: 14px;
+    border-radius: 25px;
   }
 
   &:hover {
@@ -49,5 +51,13 @@
     color: colors.$BT_RED;
     background-color: colors.$BT_WHITE;
     border: 1px solid colors.$BT_RED;
+  }
+
+  &.addBtn {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    z-index: levels.$ADD_BTN;
+    transform: translateX(-50%);
   }
 }

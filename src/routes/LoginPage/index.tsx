@@ -13,9 +13,9 @@ import SEO from 'components/SEO'
 import Button from 'components/Button'
 import Typography from 'components/Typography'
 import LoginInput from './LoginInput'
-import PopupPortal from './Popup/PopupPortal'
+import PopupPortal from 'components/PopupPortal'
 import Popup from './Popup'
-import { LoginLogo, LoginImg } from 'assets/svg'
+import { LoginLogoIcon, LoginImgIcon } from 'assets/svg'
 
 import styles from './loginPage.module.scss'
 
@@ -56,8 +56,8 @@ const LoginPage = () => {
   return (
     <div className={styles.loginPage}>
       <SEO title='로그인' />
-      <LoginImg />
-      <LoginLogo />
+      <LoginImgIcon />
+      <LoginLogoIcon />
       <form className={styles.loginForm}>
         <Typography variant='h4'>아이디</Typography>
         <LoginInput inputType='id' state={inputState} dispatch={dispatchInputState} />
